@@ -206,7 +206,7 @@ hr {
 
 /* Images */
 img {
-	max-width: 100%;
+	max-width: 70%;
 	height: auto;
 	vertical-align:top;
 }
@@ -5842,6 +5842,7 @@ body #booked-profile-page input[type="submit"], body #booked-profile-page button
 }
 .header_mobile .logo_main{
     max-height: 100px;
+	display: none;
 }
 .header_mobile .menu_button {
     position: absolute;
