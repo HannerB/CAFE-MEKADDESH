@@ -54,7 +54,7 @@ dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,input,textarea,button,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, address, section, video, audio {
-	font-family: inherit;
+	font-family: sans-serif;
 	font-size: 100%;
 	font-style: inherit;
 	font-weight: inherit;
@@ -5842,7 +5842,7 @@ body #booked-profile-page input[type="submit"], body #booked-profile-page button
 }
 .header_mobile .logo_main{
     max-height: 100px;
-	display: none;
+	display: block;
 }
 .header_mobile .menu_button {
     position: absolute;

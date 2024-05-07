@@ -1711,7 +1711,9 @@ body .booked-modal .bm-window p.appointment-title,
 }
 
 .contacts_wrap .logo img {
-	height: 90px
+	max-height: 200px;
+	max-width: 70%;
+	margin-left: 25px;
 }
 
 img.wp-smiley,

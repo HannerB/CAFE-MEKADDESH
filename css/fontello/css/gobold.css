@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Gobold Bold';
+    src: url('../font/Gobold Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+  }
+  body {
+    font-family: 'Gobold Bold', Arial, sans-serif; /* Aplicar la fuente a todo el cuerpo de la página */
+  }
