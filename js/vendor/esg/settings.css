@@ -365,14 +365,14 @@ font-family: star;
 	-	LOADER FORMS	-
 ********************************/
 
-.tp-esg-item .add_to_cart_button.loading:before {	content: "";
+/* .tp-esg-item .add_to_cart_button.loading:before {	content: "";
 	position: absolute;
 	top: 0;
 	right: 0;
 	left: 0;
 	bottom: 0;
 	background: url(../../../images/loader.gif) center no-repeat rgba(255, 255, 255, 0.65);
- }
+ } */
 
 .esg-loader {
 	top:50%; left:50%;
@@ -382,7 +382,7 @@ font-family: star;
 
 }
 
-.esg-loader.spinner0 {
+/* .esg-loader.spinner0 {
   width: 40px;
   height: 40px;
   background:url(../../../images/loader.gif) no-repeat center center;
@@ -396,7 +396,7 @@ font-family: star;
   border-radius: 3px;
 	-moz-border-radius: 3px;
 	-webkit-border-radius: 3px;
-}
+} */
 
 
 .esg-loader.spinner1 {
@@ -416,14 +416,14 @@ font-family: star;
 
 
 
-.esg-loader.spinner5 	{	background:url(../../../images/loader.gif) no-repeat 10px 10px;
+/* .esg-loader.spinner5 	{	background:url(../../../images/loader.gif) no-repeat 10px 10px;
 							background-color:#fff;
 							margin:-22px -22px;
 							width:44px;height:44px;
 							border-radius: 3px;
 							-moz-border-radius: 3px;
 							-webkit-border-radius: 3px;
-						}
+						} */
 
 
 @-webkit-keyframes esg-rotateplane {
