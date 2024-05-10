@@ -2028,7 +2028,7 @@ Very common low res
 
 @media (max-width: 480px){
 	.header_mobile .content_wrap {
-		text-align: right;
+		text-align: center;
 	}
 	.header_mobile .logo {
 		padding-bottom: 5px;
