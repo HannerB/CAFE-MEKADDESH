@@ -333,63 +333,87 @@ function hotcoffee_ready_actions() {
 	});
 
 
-	// WooCommerce
-    //----------------------------------------------
+// 	// WooCommerce
+//     //----------------------------------------------
 
-	// Change display mode
-	jQuery('.woocommerce,.woocommerce-page').on('click', '.mode_buttons a', function(e) {
-		"use strict";
-		var mode = jQuery(this).hasClass('woocommerce_thumbs') ? 'thumbs' : 'list';
-		jQuery.cookie('hotcoffee_shop_mode', mode, {expires: 365, path: '/'});
-		jQuery(this).siblings('input').val(mode).parents('form').get(0).submit();
-		e.preventDefault();
-		return false;
-	});
-	// Added to cart
-	body.on('added_to_cart', function() {
-		"use strict";
-		// Update amount on the cart button
-		var total = jQuery('.widget_shopping_cart').eq(0).find('.total .amount').text();
-		if (total != undefined) {
-			jQuery('.top_panel_cart_button .cart_summa').text(total);
-		}
-		// Update count items on the cart button
-		var cnt = 0;
-		jQuery('.widget_shopping_cart_content').eq(0).find('.cart_list li').each(function() {
-			var q = jQuery(this).find('.quantity').html().split(' ', 2);
-			if (!isNaN(q[0]))
-				cnt += Number(q[0]);
-		});
-		var cart_items = jQuery('.top_panel_cart_button .cart_items');
-		var items = cart_items.eq(0).text().split(' ', 2);
-		items[0] = cnt;
-		cart_items.text(items[0]+' '+items[1]);
-		// Update data-attr on button
-		jQuery('.top_panel_cart_button').data({
-			'items': cnt ? cnt : 0,
-			'summa': total ? total : 0
-		});
-	});
-	// Show cart 
-	jQuery('.top_panel_middle .top_panel_cart_button, .header_mobile .top_panel_cart_button').on('click', function(e) {
-		"use strict";
-		jQuery(this).siblings('.sidebar_cart').slideToggle();
-		e.preventDefault();
-		return false;
-	});
-	// Add buttons to quantity
-	jQuery('.woocommerce div.quantity,.woocommerce-page div.quantity').append('<span class="q_inc"></span><span class="q_dec"></span>');
-	jQuery('.woocommerce div.quantity').on('click', '>span', function(e) {
-		"use strict";
-		var f = jQuery(this).siblings('input');
-		if (jQuery(this).hasClass('q_inc')) {
-			f.val(Math.max(0, parseInt(f.val(),10))+1);
-		} else {
-			f.val(Math.max(1, Math.max(0, parseInt(f.val(),10))-1));
-		}
-		e.preventDefault();
-		return false;
-	});
+// 	// Change display mode
+// 	// Manejar evento de clic en botón de agregar al carrito
+// jQuery(document).ready(function($) {
+//     // Función para agregar producto al carrito
+//     function agregarAlCarrito() {
+//         // Simulamos agregar un producto al carrito
+//         var producto = {
+//             id: 140, // ID del producto
+//             nombre: "Producto de ejemplo", // Nombre del producto
+//             cantidad: 1, // Ajustamos la cantidad a 1
+//             precio: 10.00 // Precio del producto
+//         };
+
+//         // Agregar el producto al carrito (aquí podrías implementar lógica más compleja si lo deseas)
+//         actualizarCarrito();
+
+//         // Mostrar mensaje de confirmación (opcional)
+//         alert("Producto agregado al carrito");
+//     }
+
+//     // Función para actualizar el contenido del carrito en la interfaz de usuario
+//     function actualizarCarrito() {
+//         // Actualizamos el contador de items en el carrito
+//         var totalItems = $('.widget_shopping_cart_content .cart_list.product_list_widget li').length;
+//         $('.top_panel_cart_button .cart_items').text(totalItems + ' Items');
+        
+//         // Calculamos el total del carrito y lo mostramos
+//         $('.top_panel_cart_button .cart_summa').text('$' + calcularTotalCarrito());
+//     }
+
+//     // Función para calcular el total del carrito
+//     function calcularTotalCarrito() {
+//         var total = 0;
+//         $('.widget_shopping_cart_content .cart_list.product_list_widget li').each(function() {
+//             var precio = parseFloat($(this).find('.product-price').text());
+//             total += precio;
+//         });
+//         return total.toFixed(2);
+//     }
+
+//     // Evento para manejar el formulario de agregar al carrito
+//     $('.cart').submit(function(e) {
+//         e.preventDefault(); // Evitar comportamiento por defecto del formulario
+
+//         // Llamamos a la función para agregar producto al carrito
+//         agregarAlCarrito();
+//     });
+
+//     // Agregar botones de incrementar y decrementar a la cantidad
+//     $('.woocommerce div.quantity, .woocommerce-page div.quantity').append('<span class="q_inc"></span><span class="q_dec"></span>');
+//     $('.woocommerce div.quantity').on('click', '>span', function(e) {
+//         var f = $(this).siblings('input');
+//         if ($(this).hasClass('q_inc')) {
+//             f.val(Math.max(0, parseInt(f.val(),10))+1);
+//         } else {
+//             f.val(Math.max(1, Math.max(0, parseInt(f.val(),10))-1));
+//         }
+//         e.preventDefault();
+//         return false;
+//     });
+
+//     // Evento para cambiar modo de visualización
+//     $('.woocommerce, .woocommerce-page').on('click', '.mode_buttons a', function(e) {
+//         var mode = $(this).hasClass('woocommerce_thumbs') ? 'thumbs' : 'list';
+//         $.cookie('hotcoffee_shop_mode', mode, {expires: 365, path: '/'});
+//         $(this).siblings('input').val(mode).parents('form').get(0).submit();
+//         e.preventDefault();
+//         return false;
+//     });
+
+//     // Evento para mostrar el carrito
+//     $('.top_panel_middle .top_panel_cart_button, .header_mobile .top_panel_cart_button').on('click', function(e) {
+//         $(this).siblings('.sidebar_cart').slideToggle();
+//         e.preventDefault();
+//         return false;
+//     });
+// });
+
 
 	hotcoffee_stretch_width();
 
