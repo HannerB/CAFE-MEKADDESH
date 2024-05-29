@@ -928,3 +928,30 @@
 .vc_custom_1449069687256 {
 	background-color: #ffffff !important;
 }
+
+/* Estilos por defecto para el elemento */
+#slide-2-layer-3 {
+	font-size: 160px; /* Tamaño de fuente por defecto */
+  }
+  
+  /* Media query para pantallas más pequeñas */
+  @media only screen and (max-width: 768px) {
+	#slide-2-layer-3 {
+	  font-size: 60px; /* Tamaño de fuente para pantallas más pequeñas */
+	}
+  }
+  
+  /* Media query para pantallas medianas */
+  @media only screen and (min-width: 769px) and (max-width: 1200px) {
+	#slide-2-layer-3 {
+	  font-size: 70px; /* Mantiene el tamaño de fuente para pantallas medianas */
+	}
+  }
+  
+  /* Media query para pantallas más grandes */
+  @media only screen and (min-width: 1201px) {
+	#slide-2-layer-3 {
+	  font-size: 70px; /* Tamaño de fuente para pantallas más grandes */
+	}
+  }
+  

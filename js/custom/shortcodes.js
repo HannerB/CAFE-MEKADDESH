@@ -1089,3 +1089,109 @@ function hotcoffee_sc_form_validate(form){
 	}
 	return !error;
 }
+
+// js/adjustParagraphs.js
+
+function adjustParagraph() {
+    var p = document.getElementById("responsive-paragraph");
+    if (window.innerWidth > 1024) {
+        p.innerHTML = `Nuestro producto es certificado 100% orgánico libre de químicos y
+        <br> pesticidas. Somos amigables con el medio ambiente, y esto se refleja en
+        <br> nuestro empaque. Utilizamos papel Kraft compostables, el cual es 
+        <br> reciclable en un rango del 40% al 100% y aseguramos que su disposición
+        <br> final sea la elaboración de manualidades. Destacamos que nuestro
+        <br> empaque cuenta con la certificación de la FDA de Estados Unidos 
+        <br> de América y de la Unión Europea, asegurando la calidad y seguridad
+        <br> del mismo.`;
+    } else if (window.innerWidth >= 601 && window.innerWidth <= 1024) {
+        p.innerHTML = `Nuestro producto es certificado 100% orgánico libre de 
+        <br> químicos y pesticidas. Somos amigables con el medio ambiente, 
+        <br> y esto se refleja en nuestro empaque. Utilizamos papel  Kraft 
+        <br> compostables, el cual es reciclable en un rango del 40% al 100% 
+        <br> y aseguramos que su disposición final sea la elaboración
+        <br> de manualidades. Destacamos que nuestro empaque 
+        <br> cuenta con la certificación de la FDA de Estados Unidos
+        <br>  de América y de la Unión Europea, asegurando la calidad y 
+        <br> seguridad del mismo.`;
+    } else {
+        p.innerHTML = `Nuestro producto es certificado 100% orgánico libre de químicos y
+        <br> pesticidas. Somos amigables con el medio ambiente, y esto se refleja en
+        <br> nuestro empaque. Utilizamos papel Kraft compostables, el cual es 
+        <br> reciclable en un rango del 40% al 100% y aseguramos que su disposición
+        <br> final sea la elaboración de manualidades. Destacamos que nuestro
+        <br> empaque cuenta con la certificación de la FDA de Estados Unidos 
+        <br> de América y de la Unión Europea, asegurando la calidad y seguridad
+        <br> del mismo.`;
+    }
+}
+
+function adjustParagraph2() {
+    var p2 = document.getElementById("responsive-paragraph-2");
+    if (window.innerWidth > 1024) {
+        p2.innerHTML = `Nuestro enfoque en el impacto social se materializa 
+        <br> a través de nuestro valor agregado, que son las artesanías.
+        <br> Respaldamos a comunidades de artesanos del Departamento del 
+        <br> Atlántico que se dedican a la elaboración de estas obras
+        <br> únicas. Estas asociaciones incluyen a mujeres y hombres
+        <br> que son responsables de sus hogares, personas con 
+        <br> diversidad funcional y aquellos que han sido rehabilitados 
+        <br> de las drogas. Nuestro objetivo es promover la inclusión 
+        <br> y la equidad social.`;
+    } else if (window.innerWidth >= 601 && window.innerWidth <= 1024) {
+        p2.innerHTML = `Nuestro enfoque en el impacto social se materializa 
+        <br> a través de nuestro valor agregado, que son las artesanías.
+        <br> Respaldamos a comunidades de artesanos del Departamento del 
+        <br> Atlántico que se dedican a la elaboración de estas obras
+        <br> únicas. Estas asociaciones incluyen a mujeres y hombres
+        <br> que son responsables de sus hogares, personas con 
+        <br> diversidad funcional y aquellos que han sido rehabilitados 
+        <br> de las drogas. Nuestro objetivo es promover la inclusión 
+        <br> y la equidad social.`;
+    } else {
+        p2.innerHTML = `Nuestro enfoque en el impacto social se materializa 
+        <br> a través de nuestro valor agregado, que son las artesanías.
+        <br> Respaldamos a comunidades de artesanos del Departamento del 
+        <br> Atlántico que se dedican a la elaboración de estas obras
+        <br> únicas. Estas asociaciones incluyen a mujeres y hombres
+        <br> que son responsables de sus hogares, personas con 
+        <br> diversidad funcional y aquellos que han sido rehabilitados 
+        <br> de las drogas. Nuestro objetivo es promover la inclusión 
+        <br> y la equidad social.`;
+    }
+}
+
+function adjustParagraph3() {
+    var p3 = document.getElementById("responsive-paragraph-3");
+    if (window.innerWidth > 1024) {
+        p3.innerHTML = `Nuestro modelo de negocio busca generar un impacto económico
+        <br> positivo a través del desarrollo sostenible, promoviendo la 
+        <br> rentabilidad responsable, la eficiencia económica inclusiva, 
+        <br> creando oportunidades para las comunidades locales, fortaleciendo
+        <br> al desarrollo de sus habilidades y empleo. Dando así empleo a dos
+        <br> departamentos directamente en nuestro país, creando y fortaleciendo
+        <br> la cultura local para darse a conocer en el mundo.`;
+    } else if (window.innerWidth >= 601 && window.innerWidth <= 1024) {
+        p3.innerHTML = `Nuestro modelo de negocio busca generar un impacto económico
+        <br> positivo a través del desarrollo sostenible, promoviendo la
+        <br> rentabilidad responsable, la eficiencia económica inclusiva, 
+        <br> creando oportunidades para las comunidades locales, fortaleciendo
+        <br> al desarrollo de sus habilidades y empleo. Dando así empleo a 
+        <br> dos departamentos directamente en nuestro país, creando y 
+        <br> fortaleciendo la cultura local para darse a conocer en el mundo.`;
+    } else {
+        p3.innerHTML = `Nuestro modelo de negocio busca generar un impacto económico
+        <br> positivo a través del desarrollo sostenible, promoviendo la
+        <br> rentabilidad responsable, la eficiencia económica inclusiva, 
+        <br> creando oportunidades para las comunidades locales, fortaleciendo
+        <br> al desarrollo de sus habilidades y empleo. Dando así empleo a 
+        <br> dos departamentos directamente en nuestro país, creando y 
+        <br> fortaleciendo la cultura local para darse a conocer en el mundo.`;
+    }
+}
+
+window.addEventListener('resize', adjustParagraph);
+window.addEventListener('load', adjustParagraph);
+window.addEventListener('resize', adjustParagraph2);
+window.addEventListener('load', adjustParagraph2);
+window.addEventListener('resize', adjustParagraph3);
+window.addEventListener('load', adjustParagraph3);
