@@ -1097,8 +1097,8 @@ function adjustParagraph() {
     if (window.innerWidth > 1024) {
         p.innerHTML = `Nuestro producto es certificado 100% orgánico libre de químicos y
         <br> pesticidas. Somos amigables con el medio ambiente, y esto se refleja en
-        <br> nuestro empaque. Utilizamos papel Kraft compostables, el cual es 
-        <br> reciclable en un rango del 40% al 100% y aseguramos que su disposición
+        <br> nuestro empaque. Utilizamos papel Kraft compostables al 40% y
+        <br> reciclable al 100%, aseguramos que su disposición
         <br> final sea la elaboración de manualidades. Destacamos que nuestro
         <br> empaque cuenta con la certificación de la FDA de Estados Unidos 
         <br> de América y de la Unión Europea, asegurando la calidad y seguridad
@@ -1163,27 +1163,30 @@ function adjustParagraph2() {
 function adjustParagraph3() {
     var p3 = document.getElementById("responsive-paragraph-3");
     if (window.innerWidth > 1024) {
-        p3.innerHTML = `Nuestro modelo de negocio busca generar un impacto económico
+        p3.innerHTML = 
+		`Nuestro modelo de negocio busca generar un impacto económico
         <br> positivo a través del desarrollo sostenible, promoviendo la 
         <br> rentabilidad responsable, la eficiencia económica inclusiva, 
         <br> creando oportunidades para las comunidades locales, fortaleciendo
-        <br> al desarrollo de sus habilidades y empleo. Dando así empleo a dos
-        <br> departamentos directamente en nuestro país, creando y fortaleciendo
+        <br> al desarrollo de sus habilidades. Generamos empleabilidad directamente a tres
+        <br> departamentos en nuestro país, creando y fortaleciendo
         <br> la cultura local para darse a conocer en el mundo.`;
     } else if (window.innerWidth >= 601 && window.innerWidth <= 1024) {
-        p3.innerHTML = `Nuestro modelo de negocio busca generar un impacto económico
+        p3.innerHTML = 
+		`Nuestro modelo de negocio busca generar un impacto económico
         <br> positivo a través del desarrollo sostenible, promoviendo la
         <br> rentabilidad responsable, la eficiencia económica inclusiva, 
         <br> creando oportunidades para las comunidades locales, fortaleciendo
-        <br> al desarrollo de sus habilidades y empleo. Dando así empleo a 
+        <br> al desarrollo de sus habilidades y empleabilidad. Dando así empleo a 
         <br> dos departamentos directamente en nuestro país, creando y 
         <br> fortaleciendo la cultura local para darse a conocer en el mundo.`;
     } else {
-        p3.innerHTML = `Nuestro modelo de negocio busca generar un impacto económico
+        p3.innerHTML = 
+		`Nuestro modelo de negocio busca generar un impacto económico
         <br> positivo a través del desarrollo sostenible, promoviendo la
         <br> rentabilidad responsable, la eficiencia económica inclusiva, 
         <br> creando oportunidades para las comunidades locales, fortaleciendo
-        <br> al desarrollo de sus habilidades y empleo. Dando así empleo a 
+        <br> al desarrollo de sus habilidades y empleabilidad. Dando así empleo a 
         <br> dos departamentos directamente en nuestro país, creando y 
         <br> fortaleciendo la cultura local para darse a conocer en el mundo.`;
     }
@@ -1195,3 +1198,5 @@ window.addEventListener('resize', adjustParagraph2);
 window.addEventListener('load', adjustParagraph2);
 window.addEventListener('resize', adjustParagraph3);
 window.addEventListener('load', adjustParagraph3);
+
+
