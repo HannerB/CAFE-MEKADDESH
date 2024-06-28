@@ -71,7 +71,7 @@
 }
 
 .bg1 {
-	background-image:url(../images/bg_home_cup_go.png); 
+	background-image:url(../images/bg_home_cup_go\ \(1\)\ \(1\).png); 
 	background-position:50% 50%;
 }
 .bg2 {
@@ -916,7 +916,7 @@
 	background-color: #f9fafa ;
 }
 .vc_custom_1455041102295 {
-	background-image: url(../images/main_bg_1.jpg) ;
+	background-image: url(../images/main_bg_2\ \(1\).jpg) ;
 	background-position: center ;
 	background-repeat: no-repeat ;
 	background-size: cover ;

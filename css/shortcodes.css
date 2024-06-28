@@ -4688,7 +4688,8 @@ body.sidebar_hide .sc_recent_news_style_news-announce .post_size_small { height:
 	margin: 0.25em auto 4em;
 	text-align:center;
     width: 80%;
-    color: #a6a19f;
+    /* color: #a6a19f; */
+	color: #453e3c;
 }
 
 /* Learn more botton */
