@@ -1,5 +1,13 @@
 @charset "utf-8";
 
+
+/* Media query para pantallas con ancho <= 425px */
+@media (max-width: 425px) {
+    .responsive-text {
+        font-size: 9px !important; /* Reducir el tamaño del texto para pantallas pequeñas */
+    }
+}
+
 /* Responsive styles
 -------------------------------------------------------------- */
 
@@ -16,7 +24,7 @@ Apple iPhone 4 & 4S
 Apple iPod Touch (4th generation)
 */
 @media (min-width: 960px) and (max-width: 1135px) {
-	html, body { font-size: 16px; }
+	html, body, p { font-size: 16px; }
 	h1 { font-size:1.9em; }
 	h2 { font-size:1.55em; }
 	h3 { font-size:1.45em; }

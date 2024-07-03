@@ -1164,13 +1164,15 @@ function adjustParagraph3() {
     var p3 = document.getElementById("responsive-paragraph-3");
     if (window.innerWidth > 1024) {
         p3.innerHTML = 
-		`Nuestro modelo de negocio busca generar un impacto económico
-        <br> positivo a través del desarrollo sostenible, promoviendo la 
-        <br> rentabilidad responsable, la eficiencia económica inclusiva, 
-        <br> creando oportunidades para las comunidades locales, fortaleciendo
-        <br> al desarrollo de sus habilidades. Generamos empleabilidad directamente a tres
-        <br> departamentos en nuestro país, creando y fortaleciendo
-        <br> la cultura local para darse a conocer en el mundo.`;
+		`Nuestro modelo de negocio busca generar un impacto  
+		<br>económico positivo a través del desarrollo 
+		<br>sostenible, promoviendo la rentabilidad responsable,
+		<br>la eficiencia económica inclusiva, creando oportunidades 
+		<br>para las comunidades locales, fortaleciendo
+        <br>al desarrollo de sus habilidades. Generamos empleabilidad  
+		<br>directamente a tres departamentos en nuestro país,  
+		<br>creando y fortaleciendo la cultura local para darse  
+		<br>a conocer en el mundo.`;
     } else if (window.innerWidth >= 601 && window.innerWidth <= 1024) {
         p3.innerHTML = 
 		`Nuestro modelo de negocio busca generar un impacto económico
@@ -1199,4 +1201,81 @@ window.addEventListener('load', adjustParagraph2);
 window.addEventListener('resize', adjustParagraph3);
 window.addEventListener('load', adjustParagraph3);
 
+function handleResponsiveElements() {
+    var width = window.innerWidth;
+
+    var hideOnMobileElements = document.querySelectorAll('.hide-on-mobile');
+    var showOnMobileElements = document.querySelectorAll('.show-on-mobile');
+    var responsiveImageSlide5 = document.querySelector('#slide-5-layer-6');
+    var responsiveImageSlide6 = document.querySelector('#slide-6-layer-6');
+    var responsiveImageSlide7 = document.querySelector('#slide-7-layer-6');
+
+    if (width <= 425) {
+        // Ocultar elementos con la clase hide-on-mobile
+        hideOnMobileElements.forEach(function(element) {
+            element.style.display = 'none';
+        });
+
+        // Mostrar elementos con la clase show-on-mobile
+        showOnMobileElements.forEach(function(element) {
+            element.style.display = 'block';
+        });
+
+        // Ajustar los atributos data-x y data-y de la imagen responsive para slide 5
+        if (responsiveImageSlide5) {
+            responsiveImageSlide5.setAttribute('data-x', 'center');
+            responsiveImageSlide5.setAttribute('data-y', '600');
+            responsiveImageSlide5.setAttribute('data-voffset', '50');
+        }
+
+        // Ajustar los atributos data-x y data-y de la imagen responsive para slide 6
+        if (responsiveImageSlide6) {
+            responsiveImageSlide6.setAttribute('data-x', 'center');
+            responsiveImageSlide6.setAttribute('data-y', '600');
+            responsiveImageSlide6.setAttribute('data-voffset', '50');
+        }
+
+		// Ajustar los atributos data-x y data-y de la imagen responsive para slide 7
+        if (responsiveImageSlide7) {
+            responsiveImageSlide7.setAttribute('data-x', 'center');
+            responsiveImageSlide7.setAttribute('data-y', '600');
+            responsiveImageSlide7.setAttribute('data-voffset', '50');
+        }
+    } else {
+        // Mostrar elementos con la clase hide-on-mobile
+        hideOnMobileElements.forEach(function(element) {
+            element.style.display = 'block';
+        });
+
+        // Ocultar elementos con la clase show-on-mobile
+        showOnMobileElements.forEach(function(element) {
+            element.style.display = 'none';
+        });
+
+        // Restaurar los atributos data-x y data-y de la imagen responsive para slide 5
+        if (responsiveImageSlide5) {
+            responsiveImageSlide5.setAttribute('data-x', '800');
+            responsiveImageSlide5.setAttribute('data-y', '118');
+            responsiveImageSlide5.removeAttribute('data-voffset');
+        }
+
+        // Restaurar los atributos data-x y data-y de la imagen responsive para slide 6
+        if (responsiveImageSlide6) {
+            responsiveImageSlide6.setAttribute('data-x', '860'); // Ajusta según el valor original
+            responsiveImageSlide6.setAttribute('data-y', '118'); // Ajusta según el valor original
+            responsiveImageSlide6.removeAttribute('data-voffset'); // Elimina data-voffset si no se necesita
+        }
+
+		// Restaurar los atributos data-x y data-y de la imagen responsive para slide 7
+        if (responsiveImageSlide7) {
+            responsiveImageSlide7.setAttribute('data-x', '840'); // Ajusta según el valor original
+            responsiveImageSlide7.setAttribute('data-y', '118'); // Ajusta según el valor original
+            responsiveImageSlide7.removeAttribute('data-voffset'); // Elimina data-voffset si no se necesita
+        }
+    }
+}
+
+// Ejecutar la función al cargar la página y al cambiar el tamaño de la ventana
+window.addEventListener('load', handleResponsiveElements);
+window.addEventListener('resize', handleResponsiveElements);
 
