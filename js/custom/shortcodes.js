@@ -1261,7 +1261,7 @@ function handleResponsiveElements() {
 
         // Restaurar los atributos data-x y data-y de la imagen responsive para slide 6
         if (responsiveImageSlide6) {
-            responsiveImageSlide6.setAttribute('data-x', '860'); // Ajusta según el valor original
+            responsiveImageSlide6.setAttribute('data-x', '850'); // Ajusta según el valor original
             responsiveImageSlide6.setAttribute('data-y', '118'); // Ajusta según el valor original
             responsiveImageSlide6.removeAttribute('data-voffset'); // Elimina data-voffset si no se necesita
         }
