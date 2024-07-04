@@ -2747,7 +2747,6 @@ a:hover .sc_icon_shape_square.sc_icon {
   }
 }
 
-
 @media (max-width: 1440px) and (min-width: 1025px) {
   .responsive-slide {
     margin-left: 85px !important;
@@ -2760,15 +2759,10 @@ a:hover .sc_icon_shape_square.sc_icon {
   }
 }
 
-
-
-
 @media (max-width: 425px) {
   .responsive-slide {
     margin-left: 10px !important;
   }
 }
 
-
-
-
+  
