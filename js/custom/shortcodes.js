@@ -1095,14 +1095,15 @@ function hotcoffee_sc_form_validate(form){
 function adjustParagraph() {
     var p = document.getElementById("responsive-paragraph");
     if (window.innerWidth > 1024) {
-        p.innerHTML = `Nuestro producto es certificado 100% orgánico libre de químicos y
-        <br> pesticidas. Somos amigables con el medio ambiente, y esto se refleja en
-        <br> nuestro empaque. Utilizamos papel Kraft compostables al 40% y
-        <br> reciclable al 100%, aseguramos que su disposición
-        <br> final sea la elaboración de manualidades. Destacamos que nuestro
-        <br> empaque cuenta con la certificación de la FDA de Estados Unidos 
-        <br> de América y de la Unión Europea, asegurando la calidad y seguridad
-        <br> del mismo.`;
+        p.innerHTML = `Nuestro producto es certificado 100% orgánico libre de 
+        <br> químicos y pesticidas. Somos amigables con el medio ambiente, 
+        <br> y esto se refleja en nuestro empaque. Utilizamos papel  Kraft 
+        <br> compostables, el cual es reciclable en un rango del 40% al 100% 
+        <br> y aseguramos que su disposición final sea la elaboración
+        <br> de manualidades. Destacamos que nuestro empaque 
+        <br> cuenta con la certificación de la FDA de Estados Unidos
+        <br>  de América y de la Unión Europea, asegurando la calidad y 
+        <br> seguridad del mismo.`;
     } else if (window.innerWidth >= 601 && window.innerWidth <= 1024) {
         p.innerHTML = `Nuestro producto es certificado 100% orgánico libre de 
         <br> químicos y pesticidas. Somos amigables con el medio ambiente, 
@@ -1114,14 +1115,15 @@ function adjustParagraph() {
         <br>  de América y de la Unión Europea, asegurando la calidad y 
         <br> seguridad del mismo.`;
     } else {
-        p.innerHTML = `Nuestro producto es certificado 100% orgánico libre de químicos y
-        <br> pesticidas. Somos amigables con el medio ambiente, y esto se refleja en
-        <br> nuestro empaque. Utilizamos papel Kraft compostables, el cual es 
-        <br> reciclable en un rango del 40% al 100% y aseguramos que su disposición
-        <br> final sea la elaboración de manualidades. Destacamos que nuestro
-        <br> empaque cuenta con la certificación de la FDA de Estados Unidos 
-        <br> de América y de la Unión Europea, asegurando la calidad y seguridad
-        <br> del mismo.`;
+        p.innerHTML = `Nuestro producto es certificado 100% orgánico libre de 
+        <br> químicos y pesticidas. Somos amigables con el medio ambiente, 
+        <br> y esto se refleja en nuestro empaque. Utilizamos papel  Kraft 
+        <br> compostables, el cual es reciclable en un rango del 40% al 100% 
+        <br> y aseguramos que su disposición final sea la elaboración
+        <br> de manualidades. Destacamos que nuestro empaque 
+        <br> cuenta con la certificación de la FDA de Estados Unidos
+        <br>  de América y de la Unión Europea, asegurando la calidad y 
+        <br> seguridad del mismo.`;
     }
 }
 
@@ -1206,8 +1208,6 @@ function handleResponsiveElements() {
 
     var hideOnMobileElements = document.querySelectorAll('.hide-on-mobile');
     var showOnMobileElements = document.querySelectorAll('.show-on-mobile');
-	var hideOn1440Elements = document.querySelectorAll('.hide-on-1440');
-    var showOn1440Elements = document.querySelectorAll('.show-on-1440');
     var responsiveImageSlide5 = document.querySelector('#slide-5-layer-6');
     var responsiveImageSlide6 = document.querySelector('#slide-6-layer-6');
     var responsiveImageSlide7 = document.querySelector('#slide-7-layer-6');
@@ -1256,21 +1256,21 @@ function handleResponsiveElements() {
 
         // Restaurar los atributos data-x y data-y de la imagen responsive para slide 5
         if (responsiveImageSlide5) {
-            responsiveImageSlide5.setAttribute('data-x', '800');
+            responsiveImageSlide5.setAttribute('data-x', '900');
             responsiveImageSlide5.setAttribute('data-y', '118');
             responsiveImageSlide5.removeAttribute('data-voffset');
         }
 
         // Restaurar los atributos data-x y data-y de la imagen responsive para slide 6
         if (responsiveImageSlide6) {
-            responsiveImageSlide6.setAttribute('data-x', '850'); // Ajusta según el valor original
+            responsiveImageSlide6.setAttribute('data-x', '885'); // Ajusta según el valor original
             responsiveImageSlide6.setAttribute('data-y', '118'); // Ajusta según el valor original
             responsiveImageSlide6.removeAttribute('data-voffset'); // Elimina data-voffset si no se necesita
         }
 
 		// Restaurar los atributos data-x y data-y de la imagen responsive para slide 7
         if (responsiveImageSlide7) {
-            responsiveImageSlide7.setAttribute('data-x', '840'); // Ajusta según el valor original
+            responsiveImageSlide7.setAttribute('data-x', '890'); // Ajusta según el valor original
             responsiveImageSlide7.setAttribute('data-y', '118'); // Ajusta según el valor original
             responsiveImageSlide7.removeAttribute('data-voffset'); // Elimina data-voffset si no se necesita
         }

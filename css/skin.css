@@ -2743,13 +2743,13 @@ a:hover .sc_icon_shape_square.sc_icon {
 
 @media (max-width: 2560px) {
   .responsive-slide {
-    margin-left: 105px ;
+    margin-left: 40px ;
   }
 }
 
 @media (max-width: 1440px) and (min-width: 1025px) {
   .responsive-slide {
-    margin-left: 85px !important;
+    margin-left: 45px !important;
   }
 }
 
