@@ -2741,20 +2741,34 @@ a:hover .sc_icon_shape_square.sc_icon {
   margin-left: 5px; /* Añade un margen a la izquierda del ícono para separarlo del texto */
 }
 
+@media (max-width: 2560px) {
+  .responsive-slide {
+    margin-left: 105px ;
+  }
+}
+
+
+@media (max-width: 1440px) and (min-width: 1025px) {
+  .responsive-slide {
+    margin-left: 85px !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  .responsive-slide {
+    margin-left: 20px !important;
+  }
+}
+
+
+
+
 @media (max-width: 425px) {
   .responsive-slide {
     margin-left: 10px !important;
   }
 }
 
-@media (max-width: 1440px) {
-  .responsive-slide {
-    margin-left: 95px !important;
-  }
-}
 
-@media (max-width: 1024px) {
-  .responsive-slide {
-    margin-left: 15px !important;
-  }
-}
+
+
