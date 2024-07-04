@@ -1206,6 +1206,8 @@ function handleResponsiveElements() {
 
     var hideOnMobileElements = document.querySelectorAll('.hide-on-mobile');
     var showOnMobileElements = document.querySelectorAll('.show-on-mobile');
+	var hideOn1440Elements = document.querySelectorAll('.hide-on-1440');
+    var showOn1440Elements = document.querySelectorAll('.show-on-1440');
     var responsiveImageSlide5 = document.querySelector('#slide-5-layer-6');
     var responsiveImageSlide6 = document.querySelector('#slide-6-layer-6');
     var responsiveImageSlide7 = document.querySelector('#slide-7-layer-6');
@@ -1278,4 +1280,43 @@ function handleResponsiveElements() {
 // Ejecutar la función al cargar la página y al cambiar el tamaño de la ventana
 window.addEventListener('load', handleResponsiveElements);
 window.addEventListener('resize', handleResponsiveElements);
+
+function handleResponsiveElements1() {
+    var width = window.innerWidth;
+
+    // No ejecutar si el ancho es 425px o menos
+    if (width <= 425) {
+        return;
+    }
+
+    var hideOn1440Elements = document.querySelectorAll('.hide-on-1440');
+    var showOn1440Elements = document.querySelectorAll('.show-on-1440');
+
+    if (width <= 1440) {
+        // Ocultar elementos con la clase hide-on-1440
+        hideOn1440Elements.forEach(function(element) {
+            element.style.display = 'none';
+        });
+
+        // Mostrar elementos con la clase show-on-1440
+        showOn1440Elements.forEach(function(element) {
+            element.style.display = 'block';
+        });
+    } else {
+        // Mostrar elementos con la clase hide-on-1440
+        hideOn1440Elements.forEach(function(element) {
+            element.style.display = 'block';
+        });
+
+        // Ocultar elementos con la clase show-on-1440
+        showOn1440Elements.forEach(function(element) {
+            element.style.display = 'none';
+        });
+    }
+}
+
+// Ejecutar la función al cargar la página y al cambiar el tamaño de la ventana
+window.addEventListener('load', handleResponsiveElements1);
+window.addEventListener('resize', handleResponsiveElements1);
+
 
