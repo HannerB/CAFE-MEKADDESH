@@ -1970,7 +1970,7 @@ ul.sc_list_style_iconed {
 	top:0;
 	right:0;
 	bottom:0;
-	background-repeat:no-repeat;
+	/* background-repeat:no-repeat; */
 }
 .sc_parallax .sc_parallax_overlay {
 	overflow: hidden;
