@@ -8,7 +8,7 @@
     display: flex;
     flex-wrap: wrap; /* Permite que los elementos se envuelvan */
     justify-content: center; /* Centra los elementos horizontalmente */
-    gap: 15px; /* Espacio entre las imágenes */
+    gap: 25px; /* Espacio entre las imágenes */
 }
 
 .gallery-item {
