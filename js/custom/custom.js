@@ -17,7 +17,7 @@ window._wpemojiSettings = {
 	"svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/svg\/",
 	"svgExt": ".svg",
 	"source": {
-		"concatemoji": "http:\/\/hotcoffee.themerex.net\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.7.5"
+		"concatemoji": "https:\/\/hotcoffee.themerex.net\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.7.5"
 	}
 };
 	
