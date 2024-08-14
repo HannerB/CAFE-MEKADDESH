@@ -39,8 +39,8 @@ jQuery(document).ready(function($) {
 function actualizarCarrito(cantidad, totalPrecio) {
     // Crear una cadena HTML para representar el producto
     var productoHTML = '<li class="cart_item">' +
-                            '<span class="product-name">Producto de ejemplo</span>' +
-                            '<span class="product-quantity">' + cantidad + '</span>' +
+                            '<span class="product-quantity">' + cantidad + ' </span>' +
+                            '<span class="product-name">Producto(s) </span>' +
                             '<span class="product-price">$' + totalPrecio.toFixed(2) + '</span>' +
                         '</li>';
 
